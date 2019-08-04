@@ -1,25 +1,25 @@
 Source: pantheon-terminal
-Section: x11
+Section: X11
 Priority: optional
-Maintainer: elementary LLC <builds@elementary.io>
+Maintainer: Cvetoslav Ludmiloff <ludmiloff@gmail.com>
 Build-Depends: appstream,
-               debhelper (>= 10.5.1),
+               debhelper (>= 11),
                desktop-file-utils,
                gettext,
-               libgranite-dev (>= 0.3.0~),
-               libgtk-3-dev (>= 3.9.10),
+               libgranite-dev (>= 5.2.4),
+               libgtk-3-dev (>=- 3.24.0),
                libvte-2.91-dev,
                meson,
-               valac (>= 0.16),
+               valac (>= 0.44),
                libxml2-utils
-Standards-Version: 4.1.1
-Homepage: https://github.com/elementary/terminal
+Standards-Version: 4.1.3
+Homepage: https://github.com/ludmiloff/terminal
 
 Package: pantheon-terminal
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Provides: x-terminal-emulator
-Description: Modern terminal from elementary project
+Description: Modern terminal from elementary project, incl. unreleased patches
  Pantheon Terminal is a beautiful and simple terminal emulator.
  It's designed to be set up with sane defaults and little to no configuration
  and follows the elementary OS Human Interface Guidelines.
