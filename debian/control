@@ -1,5 +1,5 @@
 Source: pantheon-terminal
-Section: X11
+Section: x11
 Priority: optional
 Maintainer: Cvetoslav Ludmiloff <ludmiloff@gmail.com>
 Build-Depends: appstream,
