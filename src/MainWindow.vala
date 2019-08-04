@@ -18,7 +18,7 @@
 
 namespace PantheonTerminal {
 
-    public class MainWindow : Gtk.Window {
+    public class MainWindow : Gtk.ApplicationWindow {
         private Pango.FontDescription term_font;
         private Granite.Widgets.DynamicNotebook notebook;
         private Gtk.Clipboard clipboard;
