@@ -181,10 +181,6 @@ namespace PantheonTerminal {
             set_visual (Gdk.Screen.get_default ().get_rgba_visual ());
 
             title = TerminalWidget.DEFAULT_LABEL;
-            restore_saved_state (restore_pos);
-            if (recreate_tabs) {
-                open_tabs ();
-            }
 
             clipboard = Gtk.Clipboard.get (Gdk.Atom.intern ("CLIPBOARD", false));
             update_context_menu ();
@@ -231,6 +227,11 @@ namespace PantheonTerminal {
             });
 
             setup_ui ();
+            restore_saved_state (restore_pos);
+            if (recreate_tabs) {
+                open_tabs ();
+            }
+
             show_all ();
 
             search_revealer.set_reveal_child (false);
